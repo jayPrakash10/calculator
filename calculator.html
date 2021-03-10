@@ -1,0 +1,36 @@
+<!Doctype=html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link href="calculator.css" rel="stylesheet">
+		<script>
+			
+		</script
+	</head>
+	<body>
+		<div id="mainc">
+			<div id="tinput"><input id='expression' type=text placeholder="0"></div>
+			<div id="keys">
+				<div><button class="operator" onclick="expr('+')">+</button>
+					<button class="operator" onclick="expr('-')">-</button>
+					<button class="operator" onclick="expr('*')">*</button>
+					<button class="operator" onclick="expr('/')">/</button></div>
+			    <div><button onclick="expr('1')">1</button>
+					<button onclick="expr('2')">2</button>
+					<button onclick="expr('3')">3</button>
+					<button style="background-color: rgb(255, 117, 117);" onclick="del()">Del</button></div>
+				<div><button onclick="expr('4')">4</button>
+					<button onclick="expr('5')">5</button>
+					<button onclick="expr('6')">6</button></div>
+				<div><button onclick="expr('7')">7</button>
+					<button onclick="expr('8')">8</button>
+					<button onclick="expr('9')">9</button>
+					<button class="equal" style="height: 105px; position: absolute; margin-left: 4px;" onclick=solve()>=</button></div>
+				<div><button onclick="expr('.')">.</button>
+					<button onclick="expr('0')">0</button>
+					<button style="background-color: rgb(255, 117, 117);" onclick=clr()>C</button></div>
+			</div>
+		</div>
+	</body>
+	<script src="calculator.js"></script>
+</html>
